@@ -64,7 +64,7 @@ salaryiq-analyst-salary-study/
 
 ## Dashboard
 
-🔗 **[View Live on Tableau Public →](YOUR_TABLEAU_PUBLIC_LINK_HERE)**
+🔗 **[View Live on Tableau Public →]**
 
 The SalaryIQ dashboard includes three views:
 
@@ -88,12 +88,12 @@ python qa_pipeline.py
 
 | # | Issue | Rows affected | Action |
 |---|---|---|---|
-| QA-01b | Unnamed index column (CSV export artifact) | 2,253 | Dropped |
-| QA-03 | -1 sentinel values across 10 columns (Glassdoor encoding) | Up to 2,173 | Converted to NaN |
-| QA-05a | Salary stored as string ("$30K-$53K (Glassdoor est.)") | 2,253 | Parsed to salary_min, salary_max, salary_avg |
-| QA-06 | Company rating embedded in company name ("Acme Corp\n3.2") | 1,981 | Split into company_clean + rating_from_name |
-| QA-09 | Founded year outside plausible range | 28 | Set to NaN |
-| QA-10 | No seniority column in raw data | — | Derived from job title keywords |
+| QA-01 | Unnamed index column (CSV export artifact) | 2,253 | Dropped |
+| QA-02 | -1 sentinel values across 10 columns (Glassdoor encoding) | Up to 2,173 | Converted to NaN |
+| QA-03 | Salary stored as string ("$30K-$53K (Glassdoor est.)") | 2,253 | Parsed to salary_min, salary_max, salary_avg |
+| QA-04 | Company rating embedded in company name ("Acme Corp\n3.2") | 1,981 | Split into company_clean + rating_from_name |
+| QA-05 | Founded year outside plausible range | 28 | Set to NaN |
+| QA-06 | No seniority column in raw data | — | Derived from job title keywords |
 
 **Result:** 0 critical issues. All 2,253 rows retained with 17 clean columns.
 
