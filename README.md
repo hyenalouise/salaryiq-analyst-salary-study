@@ -33,21 +33,23 @@ salaryiq-analyst-salary-study/
 ├── data/
 │   └── glassdoor-raw.csv              ← Raw Glassdoor scrape (2,253 postings)
 │
-├── outputs/
-│   ├── glassdoor-cleaned.csv          ← Cleaned dataset (17 columns)
-│   └── data_quality_log.csv           ← Machine-readable QA log (41 checks)
-│
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb         ← Sprint 3 — cleaning notebook
-│   └── 02_analysis_presentation.ipynb ← Sprint 3 — EDA + hypothesis testing
+│   ├── datajobs_dataset_cleaning.ipynb           ← Sprint Cleaning notebook
+│   └── salaryiq_datacleaning_qa_pipeline.ipynb   ← EDA + hypothesis testing
+│
+├── outputs/
+│   ├── glassdoor-cleaned.csv          ← Cleaned dataset from Sprint Cleaning Notebook
+│   └── salaryiq-glassdoor-cleaned.csv ← Dataset used for Dashboard (further cleaned)
+│
+├── reports/
+│   ├── Salary Intelligence Platform - Pitch Deck.pdf   ← Sprint pitch deck PDF
+│   └── jobmarket_exploratory_data_analysis.ipynb       ← EDA + hypothesis testing
 │
 ├── images/
 │   ├── dashboard-market-overview.png  ← Tableau dashboard screenshot
 │   ├── dashboard-offer-checker.png    ← Offer checker page
 │   └── dashboard-full.png             ← Full dashboard view
 │
-├── qa_pipeline.py                     ← Python QA & cleaning script
-├── DATA_QUALITY_LOG.md                ← Human-readable QA documentation
 └── README.md
 ```
 
